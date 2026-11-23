@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedar Housing & Estates | Premium Builders in Lalru, Punjab</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        kedarNavy: '#0F1B2B',
+                        kedarDark: '#09111C',
+                        kedarGold: '#C59B27',
+                        kedarGoldLight: '#E2BE53',
+                        kedarSlate: '#F8FAFC'
+                    },
+                    fontFamily: {
+                        serif: ['Cinzel', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-gradient {
+            background: linear-gradient(135deg, #C59B27 0%, #E8C96B 50%, #B0861A 100%);
+        }
+        .gold-text {
+            background: linear-gradient(135deg, #C59B27 0%, #E8C96B 50%, #C59B27 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background: #C59B27;
+            cursor: pointer;
+            border: 2px solid #0F1B2B;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-kedarSlate antialiased">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Brand Logo -->
+                <a href="#" class="flex items-center space-x-3">
+                    <img src="Kedar-logo.jpeg" alt="Kedar Housing & Estates Logo" class="h-14 w-auto object-contain rounded">
+                    <div class="hidden sm:block">
+                        <span class="font-serif text-xl font-bold tracking-wider text-kedarNavy block leading-none">KEDAR</span>
+                        <span class="text-[10px] font-semibold tracking-[0.2em] text-kedarGold uppercase">Housing & Estates</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-kedarNavy">
+                    <a href="#projects" class="hover:text-kedarGold transition">Projects</a>
+                    <a href="#why-lalru" class="hover:text-kedarGold transition">Why Lalru</a>
+                    <a href="#calculator" class="hover:text-kedarGold transition">EMI Calculator</a>
+                    <a href="#about" class="hover:text-kedarGold transition">About Us</a>
+                    <button onclick="openModal('General Site Visit')" class="gold-gradient text-kedarNavy font-semibold px-5 py-2.5 rounded-md shadow hover:opacity-95 transition">
+                        Book Site Visit
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-kedarNavy p-2">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-4 pt-2 pb-6 space-y-3 shadow-lg">
+            <a href="#projects" class="block py-2 text-kedarNavy font-medium">Projects</a>
+            <a href="#why-lalru" class="block py-2 text-kedarNavy font-medium">Why Lalru</a>
+            <a href="#calculator" class="block py-2 text-kedarNavy font-medium">EMI Calculator</a>
+            <a href="#about" class="block py-2 text-kedarNavy font-medium">About Us</a>
+            <button onclick="openModal('General Site Visit')" class="w-full gold-gradient text-kedarNavy font-semibold py-2.5 rounded-md">
+                Book Site Visit
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-20 min-h-[90vh] flex items-center bg-kedarNavy text-white overflow-hidden">
+        <!-- Background Overlay Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80" 
+                 alt="Modern Architecture" 
+                 class="w-full h-full object-cover opacity-25">
+            <div class="absolute inset-0 bg-gradient-to-r from-kedarDark via-kedarNavy/90 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center space-x-2 bg-white/10 border border-kedarGold/30 rounded-full px-4 py-1.5 text-xs tracking-wider uppercase text-kedarGoldLight">
+                    <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+                    <span>Lalru • Chandigarh-Ambala Highway</span>
+                </div>
+                
+                <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+                    Building Trust. <br>
+                    <span class="gold-text">Creating Futures.</span>
+                </h1>
+                
+                <p class="text-slate-300 text-lg max-w-xl leading-relaxed">
+                    Discover RERA-approved residential townships, independent luxury floors, and high-growth commercial spaces crafted for modern living in Lalru, Punjab.
+                </p>
+
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#projects" class="gold-gradient text-kedarNavy font-bold px-7 py-3.5 rounded-md shadow-lg hover:scale-[1.02] transition flex items-center gap-2">
+                        Explore Properties <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                    <button onclick="openModal('Brochure Download')" class="border border-white/30 hover:border-kedarGold text-white px-7 py-3.5 rounded-md font-medium transition flex items-center gap-2">
+                        <i data-lucide="download" class="w-4 h-4 text-kedarGold"></i> Download Brochure
+                    </button>
+                </div>
+
+                <!-- Trust Metrics -->
+                <div class="grid grid-cols-3 gap-6 pt-8 border-t border-white/10 max-w-lg">
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-bold text-kedarGold">100%</p>
+                        <p class="text-xs text-slate-400 uppercase tracking-wider mt-1">Clear Title & RERA</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-bold text-kedarGold">25 Min</p>
+                        <p class="text-xs text-slate-400 uppercase tracking-wider mt-1">From Chandigarh</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-bold text-kedarGold">500+</p>
+                        <p class="text-xs text-slate-400 uppercase tracking-wider mt-1">Happy Families</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Inquiry Card -->
+            <div class="lg:col-span-5 bg-white text-slate-800 rounded-xl p-6 sm:p-8 shadow-2xl border-t-4 border-kedarGold">
+                <h3 class="font-serif text-xl font-bold text-kedarNavy">Request a Callback</h3>
+                <p class="text-sm text-slate-500 mt-1 mb-6">Get floor plans, price lists & exclusive pre-launch offers in Lalru.</p>
+                
+                <form onsubmit="handleQuickForm(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Full Name</label>
+                        <input type="text" required placeholder="e.g. Gurpreet Singh" class="w-full px-4 py-2.5 rounded-lg border border-slate-200 focus:outline-none focus:border-kedarGold text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Phone Number</label>
+                        <input type="tel" required placeholder="+91 98765 43210" class="w-full px-4 py-2.5 rounded-lg border border-slate-200 focus:outline-none focus:border-kedarGold text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Looking For</label>
+                        <select class="w-full px-4 py-2.5 rounded-lg border border-slate-200 focus:outline-none focus:border-kedarGold text-sm bg-white">
+                            <option>Residential Plots (100 - 250 Sq. Yds)</option>
+                            <option>3 BHK Independent Floors</option>
+                            <option>Commercial Showrooms / Booths</option>
+                            <option>Investment Advisory</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="w-full bg-kedarNavy hover:bg-kedarDark text-white font-semibold py-3 rounded-lg transition shadow-md">
+                        Get Instant Pricing
+                    </button>
+                    <p id="quick-form-msg" class="hidden text-xs text-emerald-600 font-medium text-center pt-1">
+                        Thank you! Our Lalru sales advisor will call you shortly.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section (Dynamic Filtering) -->
+    <section id="projects" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+            <div>
+                <span class="text-xs font-bold tracking-widest uppercase text-kedarGold">Our Portfolio</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-kedarNavy mt-2">Featured Developments in Lalru</h2>
+            </div>
+
+            <!-- Dynamic Category Filter Buttons -->
+            <div class="flex flex-wrap gap-2" id="filter-buttons">
+                <button data-filter="all" class="filter-btn active bg-kedarNavy text-white px-4 py-2 rounded-md text-sm font-medium transition">All Properties</button>
+                <button data-filter="plots" class="filter-btn bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 px-4 py-2 rounded-md text-sm font-medium transition">Residential Plots</button>
+                <button data-filter="floors" class="filter-btn bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 px-4 py-2 rounded-md text-sm font-medium transition">Independent Floors</button>
+                <button data-filter="commercial" class="filter-btn bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 px-4 py-2 rounded-md text-sm font-medium transition">Commercial</button>
+            </div>
+        </div>
+
+        <!-- Projects Grid (Populated via JS) -->
+        <div id="projects-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+    </section>
+
+    <!-- Why Lalru Section -->
+    <section id="why-lalru" class="py-20 bg-kedarNavy text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold tracking-widest uppercase text-kedarGold">Strategic Growth Corridor</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2">Why Invest in Lalru?</h2>
+                <p class="text-slate-300 mt-3 text-sm sm:text-base">Positioned at the gateway of Tricity, Lalru offers unmatched connectivity, industrial employment growth, and high appreciation potential.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white/5 border border-white/10 p-6 rounded-xl hover:border-kedarGold/50 transition">
+                    <div class="w-12 h-12 rounded-lg bg-kedarGold/20 flex items-center justify-center text-kedarGold mb-4">
+                        <i data-lucide="route" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">NH-152 Connectivity</h3>
+                    <p class="text-sm text-slate-300 leading-relaxed">Direct access to Chandigarh, Zirakpur, Derabassi, and Ambala with seamless highway infrastructure.</p>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 p-6 rounded-xl hover:border-kedarGold/50 transition">
+                    <div class="w-12 h-12 rounded-lg bg-kedarGold/20 flex items-center justify-center text-kedarGold mb-4">
+                        <i data-lucide="factory" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Industrial & Pharma Hub</h3>
+                    <p class="text-sm text-slate-300 leading-relaxed">Surrounded by major pharmaceutical and manufacturing units driving consistent rental and housing demand.</p>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 p-6 rounded-xl hover:border-kedarGold/50 transition">
+                    <div class="w-12 h-12 rounded-lg bg-kedarGold/20 flex items-center justify-center text-kedarGold mb-4">
+                        <i data-lucide="trending-up" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">High Capital Appreciation</h3>
+                    <p class="text-sm text-slate-300 leading-relaxed">Entry prices significantly lower than Zirakpur & Mohali with rapid spillover expansion.</p>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 p-6 rounded-xl hover:border-kedarGold/50 transition">
+                    <div class="w-12 h-12 rounded-lg bg-kedarGold/20 flex items-center justify-center text-kedarGold mb-4">
+                        <i data-lucide="shield-check" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">GMADA & RERA Compliant</h3>
+                    <p class="text-sm text-slate-300 leading-relaxed">Every Kedar Housing project features wide internal roads, underground utilities, and bank loan approvals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dynamic Home Loan & EMI Calculator -->
+    <section id="calculator" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden grid lg:grid-cols-12">
+            <div class="lg:col-span-7 p-8 sm:p-12 space-y-8">
+                <div>
+                    <span class="text-xs font-bold tracking-widest uppercase text-kedarGold">Financial Planning</span>
+                    <h2 class="font-serif text-2xl sm:text-3xl font-bold text-kedarNavy mt-1">Home Loan EMI Calculator</h2>
+                </div>
+
+                <!-- Loan Amount Slider -->
+                <div>
+                    <div class="flex justify-between text-sm font-semibold mb-2">
+                        <span class="text-slate-600">Loan Amount</span>
+                        <span class="text-kedarNavy font-bold" id="loan-val">₹ 35,00,000</span>
+                    </div>
+                    <input type="range" id="loan-slider" min="500000" max="20000000" step="100000" value="3500000" class="w-full h-2 bg-slate-200 rounded-lg appearance-none">
+                </div>
+
+                <!-- Interest Rate Slider -->
+                <div>
+                    <div class="flex justify-between text-sm font-semibold mb-2">
+                        <span class="text-slate-600">Interest Rate (% p.a.)</span>
+                        <span class="text-kedarNavy font-bold" id="rate-val">8.5 %</span>
+                    </div>
+                    <input type="range" id="rate-slider" min="6.5" max="14" step="0.1" value="8.5" class="w-full h-2 bg-slate-200 rounded-lg appearance-none">
+                </div>
+
+                <!-- Tenure Slider -->
+                <div>
+                    <div class="flex justify-between text-sm font-semibold mb-2">
+                        <span class="text-slate-600">Loan Tenure (Years)</span>
+                        <span class="text-kedarNavy font-bold" id="tenure-val">20 Years</span>
+                    </div>
+                    <input type="range" id="tenure-slider" min="1" max="30" step="1" value="20" class="w-full h-2 bg-slate-200 rounded-lg appearance-none">
+                </div>
+            </div>
+
+            <!-- EMI Output Box -->
+            <div class="lg:col-span-5 bg-kedarNavy text-white p-8 sm:p-12 flex flex-col justify-center">
+                <p class="text-xs uppercase tracking-widest text-kedarGold font-semibold">Estimated Monthly EMI</p>
+                <p class="text-4xl sm:text-5xl font-bold mt-2 mb-6" id="emi-output">₹ 30,374</p>
+                
+                <div class="space-y-3 border-t border-white/10 pt-6 text-sm">
+                    <div class="flex justify-between">
+                        <span class="text-slate-400">Principal Amount</span>
+                        <span class="font-semibold" id="principal-output">₹ 35,00,000</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-slate-400">Total Interest Payable</span>
+                        <span class="font-semibold text-kedarGoldLight" id="interest-output">₹ 37,89,715</span>
+                    </div>
+                    <div class="flex justify-between border-t border-white/10 pt-3 text-base font-bold">
+                        <span>Total Payment</span>
+                        <span id="total-output">₹ 72,89,715</span>
+                    </div>
+                </div>
+
+                <button onclick="openModal('Home Loan Assistance')" class="mt-8 w-full gold-gradient text-kedarNavy font-bold py-3 rounded-lg shadow hover:opacity-95 transition">
+                    Check Bank Eligibility
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="about" class="bg-kedarDark text-slate-300 pt-16 pb-8 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+            <div class="md:col-span-2 space-y-4">
+                <div class="flex items-center space-x-3">
+                    <img src="Kedar-logo.jpeg" alt="Kedar Logo" class="h-14 w-auto bg-white p-1 rounded">
+                    <div>
+                        <span class="font-serif text-xl font-bold text-white block">KEDAR</span>
+                        <span class="text-[10px] tracking-[0.2em] text-kedarGold uppercase">Housing & Estates</span>
+                    </div>
+                </div>
+                <p class="text-sm text-slate-400 max-w-md leading-relaxed">
+                    Committed to transparent dealings, superior construction quality, and timely delivery across Lalru and the greater Chandigarh Capital Region.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#projects" class="hover:text-kedarGold transition">Residential Plots</a></li>
+                    <li><a href="#projects" class="hover:text-kedarGold transition">Independent Floors</a></li>
+                    <li><a href="#why-lalru" class="hover:text-kedarGold transition">Why Invest in Lalru</a></li>
+                    <li><a href="#calculator" class="hover:text-kedarGold transition">EMI Calculator</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold mb-4">Site Office</h4>
+                <ul class="space-y-3 text-sm text-slate-400">
+                    <li class="flex items-start gap-2.5">
+                        <i data-lucide="map-pin" class="w-4 h-4 text-kedarGold shrink-0 mt-1"></i>
+                        <span>Ambala-Chandigarh Highway, Near ITI Chowk, Lalru, Dist. SAS Nagar (Mohali), Punjab 140501</span>
+                    </li>
+                    <li class="flex items-center gap-2.5">
+                        <i data-lucide="phone" class="w-4 h-4 text-kedarGold shrink-0"></i>
+                        <span>+91 98150-XXXXX</span>
+                    </li>
+                    <li class="flex items-center gap-2.5">
+                        <i data-lucide="mail" class="w-4 h-4 text-kedarGold shrink-0"></i>
+                        <span>info@kedarhousing.in</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500">
+            <p>© 2026 Kedar Housing & Estates. All rights reserved.</p>
+            <p class="mt-2 sm:mt-0">Building Trust. Creating Futures.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Site Visit Modal -->
+    <div id="visit-modal" class="fixed inset-0 z-50 hidden bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl max-w-md w-full p-6 sm:p-8 relative shadow-2xl border-t-4 border-kedarGold">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-kedarNavy">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            <span class="text-xs font-bold uppercase tracking-wider text-kedarGold">Schedule a Visit</span>
+            <h3 id="modal-title" class="font-serif text-2xl font-bold text-kedarNavy mt-1">Book a Free Site Visit</h3>
+            <p class="text-xs text-slate-500 mt-1 mb-5">Complimentary pick-up & drop available from Chandigarh, Zirakpur & Derabassi.</p>
+            
+            <form onsubmit="handleModalSubmit(event)" class="space-y-4">
+                <input type="text" required placeholder="Your Name" class="w-full px-4 py-2.5 rounded-lg border border-slate-200 text-sm focus:outline-none focus:border-kedarGold">
+                <input type="tel" required placeholder="Mobile Number" class="w-full px-4 py-2.5 rounded-lg border border-slate-200 text-sm focus:outline-none focus:border-kedarGold">
+                <input type="date" class="w-full px-4 py-2.5 rounded-lg border border-slate-200 text-sm text-slate-600 focus:outline-none focus:border-kedarGold">
+                <button type="submit" class="w-full gold-gradient text-kedarNavy font-bold py-3 rounded-lg shadow">
+                    Confirm Appointment
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Property Database (Lalru Focus)
+        const properties = [
+            {
+                id: 1,
+                title: "Kedar Enclave Phase-II",
+                category: "plots",
+                tag: "RERA Approved",
+                location: "Off NH-152, Lalru Mandi",
+                size: "100 - 200 Sq. Yds",
+                price: "₹ 26.5 Lac onwards",
+                image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80",
+                features: ["40ft Wide Roads", "Gated Security", "Landscaped Parks"]
+            },
+            {
+                id: 2,
+                title: "Kedar Royal Floors",
+                category: "floors",
+                tag: "Ready to Move",
+                location: "Sector 4 Extension, Lalru",
+                size: "3 BHK (1450 Sq. Ft.)",
+                price: "₹ 44.9 Lac onwards",
+                image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80",
+                features: ["Modular Kitchen", "Dedicated Car Parking", "Stilt + 3 Structure"]
+            },
+            {
+                id: 3,
+                title: "Kedar Highway Square",
+                category: "commercial",
+                tag: "High Rental Yield",
+                location: "Ambala-Chandigarh Highway, Lalru",
+                size: "Showrooms & Booths",
+                price: "₹ 32.0 Lac onwards",
+                image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
+                features: ["Highway Frontage", "Ample Surface Parking", "Power Backup"]
+            },
+            {
+                id: 4,
+                title: "Kedar Greens Villa Plots",
+                category: "plots",
+                tag: "New Launch",
+                location: "Handesra Road, Lalru",
+                size: "150 - 300 Sq. Yds",
+                price: "₹ 34.0 Lac onwards",
+                image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+                features: ["Clubhouse Access", "Underground Cabling", "80% Bank Loan"]
+            },
+            {
+                id: 5,
+                title: "Kedar Residency Smart Homes",
+                category: "floors",
+                tag: "Under Construction",
+                location: "Near ITI Chowk, Lalru",
+                size: "2 & 3 BHK Floors",
+                price: "₹ 36.5 Lac onwards",
+                image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+                features: ["24x7 Water Supply", "Gated Township", "25 Mins to Airport"]
+            },
+            {
+                id: 6,
+                title: "Kedar Industrial & Logistics Park",
+                category: "commercial",
+                tag: "CLU Approved",
+                location: "Lalru Industrial Belt",
+                size: "500 - 2000 Sq. Yds",
+                price: "On Request",
+                image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80",
+                features: ["Heavy Vehicle Access", "60ft Internal Roads", "3-Phase Power"]
+            }
+        ];
+
+        // Render Projects
+        const grid = document.getElementById('projects-grid');
+        function renderProjects(filter = 'all') {
+            grid.innerHTML = '';
+            const filtered = filter === 'all' ? properties : properties.filter(p => p.category === filter);
+            
+            filtered.forEach(prop => {
+                const card = `
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition border border-slate-100 flex flex-col">
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="${prop.image}" alt="${prop.title}" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                            <span class="absolute top-3 left-3 bg-kedarNavy text-kedarGoldLight text-xs font-semibold px-3 py-1 rounded-full">
+                                ${prop.tag}
+                            </span>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center text-xs text-slate-500 gap-1 mb-1">
+                                    <i data-lucide="map-pin" class="w-3.5 h-3.5 text-kedarGold"></i>
+                                    <span>${prop.location}</span>
+                                </div>
+                                <h3 class="font-serif text-xl font-bold text-kedarNavy">${prop.title}</h3>
+                                <p class="text-sm font-semibold text-kedarGold mt-1">${prop.price} <span class="text-slate-400 font-normal">• ${prop.size}</span></p>
+                                
+                                <div class="flex flex-wrap gap-1.5 mt-4">
+                                    ${prop.features.map(f => `<span class="text-[11px] bg-slate-100 text-slate-600 px-2.5 py-1 rounded">${f}</span>`).join('')}
+                                </div>
+                            </div>
+
+                            <div class="mt-6 pt-4 border-t border-slate-100 flex gap-2">
+                                <button onclick="openModal('${prop.title}')" class="flex-1 bg-kedarNavy hover:bg-kedarDark text-white text-xs font-semibold py-2.5 rounded-lg transition">
+                                    Book Site Visit
+                                </button>
+                                <button onclick="openModal('Brochure: ${prop.title}')" class="px-3 py-2.5 border border-slate-200 hover:border-kedarGold rounded-lg text-kedarNavy transition" title="Get Floor Plan">
+                                    <i data-lucide="file-text" class="w-4 h-4"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                grid.innerHTML += card;
+            });
+            lucide.createIcons();
+        }
+        renderProjects();
+
+        // Filter Button Handlers
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => {
+                    b.classList.remove('bg-kedarNavy', 'text-white');
+                    b.classList.add('bg-white', 'text-slate-600');
+                });
+                btn.classList.remove('bg-white', 'text-slate-600');
+                btn.classList.add('bg-kedarNavy', 'text-white');
+                renderProjects(btn.dataset.filter);
+            });
+        });
+
+        // EMI Calculator Logic
+        const loanSlider = document.getElementById('loan-slider');
+        const rateSlider = document.getElementById('rate-slider');
+        const tenureSlider = document.getElementById('tenure-slider');
+
+        function formatINR(num) {
+            return '₹ ' + Math.round(num).toLocaleString('en-IN');
+        }
+
+        function calculateEMI() {
+            const P = parseFloat(loanSlider.value);
+            const R = parseFloat(rateSlider.value) / 12 / 100;
+            const N = parseFloat(tenureSlider.value) * 12;
+
+            const emi = (P * R * Math.pow(1 + R, N)) / (Math.pow(1 + R, N) - 1);
+            const totalPay = emi * N;
+            const totalInterest = totalPay - P;
+
+            document.getElementById('loan-val').innerText = formatINR(P);
+            document.getElementById('rate-val').innerText = rateSlider.value + ' %';
+            document.getElementById('tenure-val').innerText = tenureSlider.value + ' Years';
+
+            document.getElementById('emi-output').innerText = formatINR(emi);
+            document.getElementById('principal-output').innerText = formatINR(P);
+            document.getElementById('interest-output').innerText = formatINR(totalInterest);
+            document.getElementById('total-output').innerText = formatINR(totalPay);
+        }
+
+        [loanSlider, rateSlider, tenureSlider].forEach(el => el.addEventListener('input', calculateEMI));
+        calculateEMI();
+
+        // Modal & Form Controls
+        function openModal(subject) {
+            document.getElementById('modal-title').innerText = subject;
+            document.getElementById('visit-modal').classList.remove('hidden');
+        }
+        function closeModal() {
+            document.getElementById('visit-modal').classList.add('hidden');
+        }
+        function handleQuickForm(e) {
+            e.preventDefault();
+            document.getElementById('quick-form-msg').classList.remove('hidden');
+            e.target.reset();
+        }
+        function handleModalSubmit(e) {
+            e.preventDefault();
+            alert('Thank you! Your appointment with Kedar Housing & Estates (Lalru) is confirmed.');
+            closeModal();
+            e.target.reset();
+        }
+
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
